@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>CRUD Rutas</title>
+
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <div id="map-container">
+            <div id="map"></div>
+
+            <div id="inputs-container">
+                <label for="origin">Seleccionar Origen:</label>
+                <select name="origin" id="origin">
+                    <option value="Universidad de La Sabana, Chía, Cundinamarca"
+                        >Universidad de La Sabana, Chía, Cundinamarca</option
+                    >
+                    <option value="Centro Comercial Santafé, Bogotá"
+                        >Centro Comercial Santafé, Bogotá</option
+                    >
+                    <option
+                        value="Éxito Zipaquira, Calle 1, Zipaquirá, Cundinamarca"
+                        >Éxito Zipaquira, Calle 1, Zipaquirá,
+                        Cundinamarca</option
+                    >
+                    <option value="Calle 2, Cogua, Cundinamarca">Calle 2, Cogua, Cundinamarca</option>
+                </select>
+
+                <label for="destiny">Seleccionar Destino:</label>
+                <select name="destiny" id="destiny">
+                    <option value="Universidad de La Sabana, Chía, Cundinamarca"
+                        >Universidad de la Sabana, Chía, Cundinamarca</option
+                    >
+                    <option value="Centro Comercial Santafé, Bogotá"
+                        >Cc Santa fé, Bogotá Colombia</option
+                    >
+                    <option
+                        value="Éxito Zipaquira, Calle 1, Zipaquirá, Cundinamarca"
+                        >Éxito Zipaquira, Calle 1, Zipaquirá,
+                        Cundinamarca</option
+                    >
+
+                    <option value="Calle 2, Cogua, Cundinamarca">Calle 2, Cogua, Cundinamarca</option>
+                </select>
+
+                <!-- <button id="crear-ruta">CREAR RUTA</button> -->
+
+                <div id="detalles-ruta-container">
+                    <h3>Detalles de Ruta:</h3>
+
+                    <div id="detalles-ruta">
+                        <p id="distancia">
+                            <span class="etiqueta-detalle-ruta">
+                                Distancia:
+                            </span>
+
+                            <span class="val-detalle-ruta"> </span>
+                        </p>
+
+                        <p id="duracion">
+                            <span class="etiqueta-detalle-ruta">
+                                Duración:
+                            </span>
+
+                            <span class="val-detalle-ruta"> </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script
+            async
+            defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYiuhoZjEyZvXVRYCaOzHaUbvBARVl22E&callback=initMap"
+            type="text/javascript"
+        ></script>
+        <script src="jquery.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
